@@ -1,3 +1,5 @@
 from django.shortcuts import render
+from .models import *
 
-# Create your views here.
+def post_listar(request):
+    return render(request, 'blog/post_listar.html', {})
